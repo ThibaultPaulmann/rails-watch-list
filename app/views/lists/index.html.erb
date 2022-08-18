@@ -1,0 +1,22 @@
+<div class="container d-flex justify-content-center">
+  <div class="list_index">
+    <div class="lists-header d-flex justify-content-between">
+      <h1>
+        My Lists
+      </h1>
+      <h1>
+        <%= link_to new_list_path do %>
+          <i class="fa-solid fa-file-pen"></i>
+        <% end %>
+      </h1>
+    </div>
+    <% @lists.each do |list| %>
+      <div class="list-item">
+        <%= link_to list_path(list) do %>
+          <p><%= list.name %></p>
+        <% end %>
+      </div>
+    <% end %>
+    <br>
+  </div>
+</div>
