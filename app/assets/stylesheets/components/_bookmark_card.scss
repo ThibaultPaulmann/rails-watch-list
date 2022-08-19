@@ -1,0 +1,50 @@
+.bookmark_card {
+  width: 700px;
+  height: auto;
+  background-color: $secondary-color;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  margin: 15px 0 25px 0;
+
+  p {
+    color: $primary-text;
+  }
+
+  img {
+    width: 250px;
+    border-radius: 20px;
+  }
+}
+
+.bookmark_info {
+  margin: 5px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  h3 {
+    color: white;
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+
+  h4 {
+    color: $primary-text;
+    font-size: 24px;
+    padding-bottom: 20px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  a {
+    color: $primary-text;
+
+    &:hover {
+      color: $highlight-color;
+    }
+  }
+}

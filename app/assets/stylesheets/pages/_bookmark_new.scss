@@ -1,0 +1,14 @@
+.bookmark_new {
+  margin-top: 40px;
+  * {
+    color: white;
+
+    input {
+      color: white;
+
+      &:focus {
+        color: white;
+      }
+    }
+  }
+}
